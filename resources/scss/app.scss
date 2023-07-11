@@ -3,44 +3,50 @@
 
 @import '~bootstrap/scss/bootstrap';
 
+// Style Header
 header {
-  @include flex-content(between);
-  height: 100px;
 
-  img {
-    width: 70px;
-    height: 70px;
-  }
+  .container {
 
-  ul {
-    font-size: 0.9rem;
-    font-weight: 500;
-    @include flex-content(center);
-    gap: 15px;
-    height: 100%;
+    @include flex-content(between);
+    height: 100px;
 
-    li {
-      height: 50px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    ul {
+      font-size: 0.9rem;
+      font-weight: 500;
       @include flex-content(center);
-      border-bottom: 3px solid transparent;
+      gap: 15px;
       height: 100%;
 
-      &.active {
-        border-bottom: 3px solid $blue;
-        color: $blue;
+      li {
+        height: 50px;
+        @include flex-content(center);
+        border-bottom: 3px solid transparent;
+        height: 100%;
+
+        &.active {
+          border-bottom: 3px solid $blue;
+          color: $blue;
+        }
       }
     }
   }
 
   #hero {
     height: 200px;
-    background-image: url("resources/img/jumbotron.jpg");
-    background-color: red;
+    width: 100%;
+    background-image: url("/resources/img/jumbotron.jpg");
+    background-size: cover;
   }
 }
 
-
-main {
+// Style home page
+#home {
   background-color: $dark-grey;
 
   .container {
@@ -92,6 +98,10 @@ main {
   }
 }
 
+// Style info-page
+@import 'partials/info-page';
+
+// Style footer
 footer {
   background-color: black;
   color: white;

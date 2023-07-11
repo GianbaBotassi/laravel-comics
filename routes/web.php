@@ -232,3 +232,8 @@ Route::get('/', function () {
 
     return view('home', compact('cards'));
 });
+
+Route::get('/info-page', function () {
+
+    return view('info-page');
+})->name('info-page');

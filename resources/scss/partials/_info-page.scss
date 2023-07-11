@@ -1,0 +1,23 @@
+main {
+
+  .container {
+    position: relative;
+
+    span {
+      background-color: $blue;
+      color: $white-font;
+      padding: 5px 20px;
+    }
+
+    #current-series {
+      position: absolute;
+      left: 0;
+      top: -15px
+    }
+  }
+
+  div {
+    height: 500px;
+    background-color: red;
+  }
+}

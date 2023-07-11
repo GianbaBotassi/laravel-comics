@@ -1,19 +1,21 @@
-main {
+#info-page {
 
   .container {
     position: relative;
+    @include flex-content(center);
 
-    span {
-      background-color: $blue;
-      color: $white-font;
-      padding: 5px 20px;
-    }
 
-    #current-series {
-      position: absolute;
-      left: 0;
-      top: -15px
-    }
+    // span {
+    //   background-color: $blue;
+    //   color: $white-font;
+    //   padding: 5px 20px;
+    // }
+
+    // #current-series {
+    //   position: absolute;
+    //   left: 0;
+    //   top: -15px
+    // }
   }
 
 

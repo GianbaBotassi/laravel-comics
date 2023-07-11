@@ -14,5 +14,8 @@
     <li>NEWS</li>
     <li>SHOP</li>
   </ul>
+  
+  <div id="hero"></div>
+
 </header>
 

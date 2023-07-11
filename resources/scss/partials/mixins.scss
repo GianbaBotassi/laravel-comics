@@ -1,0 +1,24 @@
+@mixin flex-content($type: 'both') {
+    display: flex;
+    align-items: center;
+
+    @if $type =='center' {
+        justify-content: center;
+    }
+
+    @else if $type =='between' {
+        justify-content: space-between;
+    }
+
+    @else if $type =='around' {
+        justify-content: space-around
+    }
+
+    @else if $type =='start' {
+        justify-content: flex-start
+    }
+
+    @else if $type =='end' {
+        justify-content: flex-end
+    }
+}
